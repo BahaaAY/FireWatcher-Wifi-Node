@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.ejs": "html",
+    "stdio.h": "c",
+    "task.h": "c",
+    "freertos.h": "c"
+  }
+}
