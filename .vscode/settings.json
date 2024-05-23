@@ -4,6 +4,7 @@
     "stdio.h": "c",
     "task.h": "c",
     "freertos.h": "c",
-    "esp_log.h": "c"
+    "esp_log.h": "c",
+    "dht.h": "c"
   }
 }
