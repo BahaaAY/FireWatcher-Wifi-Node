@@ -13,11 +13,13 @@
 #include "esp_spi_flash.h"
 #include "driver/adc.h"
 #include "esp_log.h"
-#include <dht/dht.h>
+
+#include "dht.h"
+
 #include <esp_err.h>
 static const char *TAG = "adc ";
 
-#define DHT_GPIO 13 // D7 pin
+#define DHT_GPIO 4 // D2 pin
 
 static void adc_task()
 {
@@ -38,13 +40,13 @@ static void adc_task()
 }
 void temperature_task(void *arg)
 {
-    ESP_ERROR_CHECK(dht_init(DHT_GPIO, false));
-    vTaskDelay(2000 / portTICK_PERIOD_MS);
     while (1)
     {
-        int humidity = 0;
-        int temperature = 0;
+        int16_t humidity = 0;
+        int16_t temperature = 0;
         if (dht_read_data(DHT_TYPE_DHT11, DHT_GPIO, &humidity, &temperature) == ESP_OK) {
+             humidity = humidity / 10;
+            temperature = temperature / 10;
             printf("Humidity: %d Temperature: %d\n", humidity, temperature);
         } else {
             printf("Fail to get dht temperature data\n");

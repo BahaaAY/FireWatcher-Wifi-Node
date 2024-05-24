@@ -6,7 +6,8 @@
         "${workspaceFolder}/**",
         "${workspaceFolder}/build/include/*",
         "${IDF_PATH}/components/**",
-        "${IDF_PATH}/components/freertos/port/esp8266/include" // for some reason its required
+        "${IDF_PATH}/components/freertos/port/esp8266/include", // for some reason its required
+        "/Users/bahaa/esp/extra_components/esp-idf-lib/components/**"
       ],
       "browse": {
         "limitSymbolsToIncludedHeaders": true,
