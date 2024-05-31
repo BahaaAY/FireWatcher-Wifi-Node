@@ -19,18 +19,27 @@
 #include <esp_err.h>
 
 #include "sensors_util.h"
-static const char *TAG = "adc ";
+#include "wifi_util.h"
+static const char *TAG = "MAIN ";
 
 
 
 void app_main()
 {
+    setup_wifi();
 
-   setup_adc();
+    for(;;)
+    {
+    
+        vTaskDelay(1000/portTICK_RATE_MS);
+    }
+    // setup_wifi();
+
+//    setup_adc();
 
    
     
 
-    xTaskCreate(read_sensors, "sensors task", 2048, NULL, 5, NULL);
+    // xTaskCreate(read_sensors, "sensors task", 2048, NULL, 5, NULL);
 
 }

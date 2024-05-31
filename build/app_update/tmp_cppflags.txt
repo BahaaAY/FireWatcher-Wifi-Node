@@ -1,1 +1,1 @@
-1f4c3e4-dirty firewatcher-wifi v3.4-98-ga96bc5cb
+8e2da41-dirty firewatcher-wifi v3.4-98-ga96bc5cb

@@ -8,7 +8,19 @@
     "dht.h": "c",
     "esp_err.h": "c",
     "esp_system.h": "c",
-    "sensors_util.h": "c"
+    "sensors_util.h": "c",
+    "scheme_softap.h": "c",
+    "esp_wifi.h": "c",
+    "err.h": "c",
+    "sys.h": "c",
+    "gpio.h": "c",
+    "nvs_flash.h": "c",
+    "string.h": "c",
+    "esp_netif.h": "c",
+    "manager.h": "c",
+    "protocomm_security0.h": "c",
+    "esp_event.h": "c",
+    "protocomm_security.h": "c"
   },
   "idf.adapterTargetName": "esp8266",
   "idf.port": "/dev/cu.usbserial-0001"
