@@ -6,7 +6,10 @@
     "freertos.h": "c",
     "esp_log.h": "c",
     "dht.h": "c",
-    "esp_err.h": "c"
+    "esp_err.h": "c",
+    "esp_system.h": "c",
+    "sensors_util.h": "c"
   },
-  "idf.adapterTargetName": "esp8266"
+  "idf.adapterTargetName": "esp8266",
+  "idf.port": "/dev/cu.usbserial-0001"
 }
